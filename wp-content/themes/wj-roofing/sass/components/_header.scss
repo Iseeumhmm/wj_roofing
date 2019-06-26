@@ -1,0 +1,28 @@
+
+
+header {
+    .site-branding {
+        padding: 4rem 0;
+    }
+    .row {
+        position: relative;
+    }
+    .main-logo {
+        width: 45rem;
+    }
+    .heading {
+        text-align: right;
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+    }
+    a.telephone {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $grey !important;
+        font-weight: bold;
+        font-style: italic;
+        font-size: $font-small;
+    }
+}

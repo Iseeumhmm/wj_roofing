@@ -1,0 +1,39 @@
+nav.navbar {
+    padding: 1rem 0;
+    font-size: $font-medium;
+    font-style: italic;
+    color: white;
+    .bullet {
+        color: $black;
+    }
+    .active::before {
+        position: absolute;
+        color: black;
+        content: '●';
+    }
+    li {
+        position: relative;
+    }
+    li:not(:first-child) { 
+        margin-left: 9rem; 
+        .active::before {
+            left: -3rem;
+        }
+    }
+    li:first-child {
+        padding-left: 2rem;
+        .active::before {
+            left: -1rem;
+        }
+    }
+    
+
+// button.navbar-toggler {
+//     height: 2.5rem;
+//     z-index: 1000;
+//     position: absolute;
+//     right: 1.5rem;
+//     top: 1.65rem;
+// }
+}
+
