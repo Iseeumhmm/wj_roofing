@@ -1,0 +1,25 @@
+.home-page {
+    .small-image {
+        height: 27.5rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    .red-bar {
+        height: 1rem;
+        width: 100%;
+        background-color: $red;
+        display: none;
+        position: absolute;
+        bottom: 0;
+    }
+    .hover-bar {
+        overflow: hidden;
+    }
+    .hover-bar:hover {
+        .red-bar {
+            display: block;
+        }
+    }
+}

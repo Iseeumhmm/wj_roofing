@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer background-black">
-			
+		<div class="red-line"></div>
 		<div class="container-fluid main-container h-100">
 			<div class="row h-100 d-flex justify-content-between align-items-center">
 				<div class="col-auto">

@@ -1,9 +1,10 @@
 
-
+// Colors
 
 $black: #000000;
 $red: #ed1c24;
 $grey: #808080;
+
 .background-red {
     background-color: $red;
 }
@@ -19,5 +20,35 @@ $font-small: 24px;
 // Margins
 
 // $margin-main: 32.5rem;
+$margin-main-y: 8rem;
+.margin-main-t {
+    margin-top: $margin-main-y;
+} 
+.margin-main-b {
+    margin-bottom: $margin-main-y;
+} 
 
 $margin-main: 0;
+
+// Padding
+$padding-main-y: 8rem;
+.padding-main-y {
+    padding: $padding-main-y 0;
+} 
+.padding-main-t {
+    padding-top: $padding-main-y;
+} 
+.padding-main-b {
+    padding-bottom: $padding-main-y;
+} 
+
+$padding-small-y: 1rem;
+.padding-small-y {
+    padding: $padding-small-y 0;
+} 
+.padding-small-t {
+    padding-top: $padding-small-y;
+} 
+.padding-small-b {
+    padding-bottom: $padding-small-y;
+} 

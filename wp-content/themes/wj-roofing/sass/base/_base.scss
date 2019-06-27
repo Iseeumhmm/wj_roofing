@@ -38,6 +38,11 @@ body {
         font-size: $font-medium; 
         font-weight: bold;
     }
+    h3 {
+        font-family: "Arial Black";
+        color: white;
+        font-size: $font-large;
+    }
 
     p {
         font-size: $font-small;

@@ -20,9 +20,16 @@ License URI:        http://opensource.org/licenses/MIT
 // Base
 
 @import "./base/base";
+@import "./base/typography";
 
 // Components
 
 @import "./components/header";
 @import "./components/navbar";
+@import "./components/banner-image";
+@import "./components/button";
 @import "./components/footer";
+
+// Pages
+
+@import "./pages/home";

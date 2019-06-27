@@ -1,0 +1,21 @@
+
+.text-regular {
+    color: $grey;
+    font-size: $font-small;
+    font-style: normal;
+    li {
+        margin-left: 2.5rem;
+    }
+}
+
+// Bold Italic
+.text-bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Text Colors
+
+.text-black {
+    color: $black;
+}

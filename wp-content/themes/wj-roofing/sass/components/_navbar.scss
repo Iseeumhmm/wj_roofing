@@ -17,13 +17,13 @@ nav.navbar {
     li:not(:first-child) { 
         margin-left: 9rem; 
         .active::before {
-            left: -3rem;
+            left: -2rem;
         }
     }
     li:first-child {
-        padding-left: 2rem;
+        padding-left: 4rem;
         .active::before {
-            left: -1rem;
+            left: 2rem;
         }
     }
     

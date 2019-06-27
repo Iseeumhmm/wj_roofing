@@ -26,7 +26,7 @@
 		<div class="site-branding">
 			<div class="container-fluid main-container">
 				<div class="row">
-					<div class="col>
+					<div class="col">
 						<a href="<?php echo get_site_url(); ?>/" title="Home"><img class="main-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/wj-roofing-logo.svg" alt="Logo"></a>
 					</div>
 					<div class="col">
@@ -53,7 +53,7 @@
 							<a href="<?php echo get_site_url() ?>/gallery" id="gallery" class="nav-link">Gallery</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo get_site_url() ?>/Contact" id="contact" class="nav-link">Contact</a>
+							<a href="<?php echo get_site_url() ?>/contact" id="contact" class="nav-link">Contact</a>
 						</li>
 					</ul>
 				</div>

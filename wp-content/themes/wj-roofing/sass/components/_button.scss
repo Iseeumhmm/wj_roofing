@@ -1,0 +1,10 @@
+.button {
+    background-color: $red;
+    color: $white;
+    font-family: "Arial Black";
+    font-size: $font-small;
+    padding: 1rem 2rem;
+    &:hover {
+        background-color: $black;
+    }
+}
