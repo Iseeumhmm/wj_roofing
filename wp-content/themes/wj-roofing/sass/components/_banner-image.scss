@@ -4,9 +4,13 @@
     background-size: cover;
     background-position: top right;
     &-main {
-        height: 45rem;
+        height: 38rem;
         background-position: center left;
 
+    }
+    &-about {
+        height: 48rem;
+        background-position: center center;
     }
 }
 .banner-text {

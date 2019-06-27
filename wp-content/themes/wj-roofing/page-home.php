@@ -35,7 +35,6 @@ get_header();
 	<div id="primary" class="content-area home-page">
 		<main id="main" class="site-main">
 		<div class="banner-image banner-image-main banner-image-1"></div>
-
 		<div class="container-fluid main-container padding-main-y">
 			<div class="row">
 				<div class="col-md-4">

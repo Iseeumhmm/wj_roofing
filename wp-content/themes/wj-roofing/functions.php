@@ -84,6 +84,94 @@ endif;
 add_action( 'after_setup_theme', 'wj_roofing_setup' );
 
 /**
+ * CUSTOM PRODUCTS POST TYPE
+ */
+
+function product_init() {
+    // set up product labels
+    $labels = array(
+        'name' => 'Products',
+        'singular_name' => 'Products',
+        'add_new' => 'Add New Product',
+        'add_new_item' => 'New Product',
+        'edit_item' => 'Edit Product',
+        'new_item' => 'New Product',
+        'all_items' => 'All Products',
+        'view_item' => 'View Product',
+        'search_items' => 'Search Products',
+        'not_found' =>  'No Product Found',
+        'not_found_in_trash' => 'No Product found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Products',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'product'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-admin-multisite',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+    );
+    register_post_type( 'products', $args );
+    
+}
+add_action( 'init', 'product_init' );
+
+/**
+ * CUSTOM SERVICES POST TYPE
+ */
+
+function service_init() {
+    // set up service labels
+    $labels = array(
+        'name' => 'Services',
+        'singular_name' => 'Services',
+        'add_new' => 'Add New Service',
+        'add_new_item' => 'New Service',
+        'edit_item' => 'Edit Service',
+        'new_item' => 'New Service',
+        'all_items' => 'All Services',
+        'view_item' => 'View Service',
+        'search_items' => 'Search Services',
+        'not_found' =>  'No Service Found',
+        'not_found_in_trash' => 'No Service found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Services',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'service'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-hammer',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+	);
+    register_post_type( 'services', $args );
+    
+}
+add_action( 'init', 'service_init' );
+
+
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.

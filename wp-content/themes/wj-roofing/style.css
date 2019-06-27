@@ -11140,6 +11140,18 @@ a.text-dark:focus {
   padding-bottom: 8rem;
 }
 
+.padding-medium-y {
+  padding: 4rem 0;
+}
+
+.padding-medium-t {
+  padding-top: 4rem;
+}
+
+.padding-medium-b {
+  padding-bottom: 4rem;
+}
+
 .padding-small-y {
   padding: 1rem 0;
 }
@@ -11150,6 +11162,25 @@ a.text-dark:focus {
 
 .padding-small-b {
   padding-bottom: 1rem;
+}
+
+.padding-column-xl {
+  padding-right: 4rem !important;
+}
+
+.padding-column-xr {
+  padding-left: 4rem !important;
+}
+
+.padding-products-x {
+  padding: 0 2rem;
+}
+
+.center-hor {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 *,
@@ -11218,6 +11249,11 @@ body .main-container {
   width: 127.5rem;
 }
 
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 button:focus {
   outline: 0;
 }
@@ -11254,6 +11290,10 @@ li:focus {
 
 .text-regular li {
   margin-left: 2.5rem;
+}
+
+.text-image {
+  font-size: 18px;
 }
 
 .text-bold-italic {
@@ -11339,8 +11379,13 @@ nav.navbar li:first-child .active::before {
 }
 
 .banner-image-main {
-  height: 45rem;
+  height: 38rem;
   background-position: center left;
+}
+
+.banner-image-about {
+  height: 48rem;
+  background-position: center center;
 }
 
 .banner-text {
@@ -11377,6 +11422,36 @@ footer ul li {
 
 footer a {
   display: inline-block;
+}
+
+.medium-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.medium-image-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+}
+
+.service-image-spacer-t {
+  height: 16%;
+}
+
+.service-image-spacer-m {
+  height: 78.25%;
 }
 
 .home-page .small-image {

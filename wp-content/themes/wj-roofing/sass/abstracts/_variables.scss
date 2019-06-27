@@ -42,6 +42,19 @@ $padding-main-y: 8rem;
     padding-bottom: $padding-main-y;
 } 
 
+// Medium Padding
+$padding-medium: 4rem;
+.padding-medium-y {
+    padding: $padding-medium 0;
+} 
+.padding-medium-t {
+    padding-top: $padding-medium;
+} 
+.padding-medium-b {
+    padding-bottom: $padding-medium;
+} 
+
+// Small Padding
 $padding-small-y: 1rem;
 .padding-small-y {
     padding: $padding-small-y 0;
@@ -52,3 +65,16 @@ $padding-small-y: 1rem;
 .padding-small-b {
     padding-bottom: $padding-small-y;
 } 
+
+// Padding for the vertical image on about page
+.padding-column-xl {
+    padding-right: 4rem !important;
+}
+.padding-column-xr {
+    padding-left: 4rem !important;
+}
+
+// Padding for product images
+.padding-products-x {
+    padding: 0 2rem;
+}
