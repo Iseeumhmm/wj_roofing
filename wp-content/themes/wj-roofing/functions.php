@@ -169,6 +169,49 @@ function service_init() {
 }
 add_action( 'init', 'service_init' );
 
+/**
+ * CUSTOM GALLERY POST TYPE
+ */
+
+function gallery_init() {
+    // set up gallery labels
+    $labels = array(
+        'name' => 'Gallery',
+        'singular_name' => 'Gallery',
+        'add_new' => 'Add New Image',
+        'add_new_item' => 'New Image',
+        'edit_item' => 'Edit Image',
+        'new_item' => 'New Image',
+        'all_items' => 'All Images',
+        'view_item' => 'View Image',
+        'search_items' => 'Search Images',
+        'not_found' =>  'No Images Found',
+        'not_found_in_trash' => 'No Images found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Gallery',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'gallery'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+	);
+    register_post_type( 'Gallery', $args );
+    
+}
+add_action( 'init', 'gallery_init' );
+
 
 
 /**

@@ -15,13 +15,19 @@
 
 get_header();
 ?>
+	<style>
+		.banner-image-1 {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/banners/banner-products.jpg')
+		}
+	</style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="banner-image banner-image-center banner-image-1"></div>
 			<div class="main-container padding-main-t">
 				<h2 class="text-black">We offer a variety of products including</h2>
 				<p class="text-regular">EPDM & TPO Flat Roofing, Long Sheet Metal Roofing, and the following:</p>
 				<?php 
-				// the query
+				// Get Products from database
 				$wpb_all_query = new WP_Query(array('post_type'=>'products', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
 				<?php if ( $wpb_all_query->have_posts() ) : ?>
 				<div class="container-fluid padding-medium-t padding-main-b">
@@ -41,7 +47,7 @@ get_header();
 				</div>
 				<h2 class="text-black padding-main-t">Our services</h2>
 				<?php 
-				// the query
+				// Get Services from database
 				$wpb_all_query = new WP_Query(array('post_type'=>'services', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
 				<?php if ( $wpb_all_query->have_posts() ) : ?>
 				<div class="container-fluid">
@@ -50,7 +56,8 @@ get_header();
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 							<div class="col-md-6 padding-products-x padding-column-xl">
 								<h2 class="padding-small-b padding-medium-t"><?php the_title(); ?></h2>
-								<img class="service-image" src="<?php the_field( "image" ); ?>"></img>
+								<div class="service-image" style="background-image: url( '<?php the_field( "image" ); ?>' )"></div>
+								<!-- <img class="service-image" src="<?php the_field( "image" ); ?>"></img> -->
 								<p class="text-regular text-image padding-small-t"><?php the_field( "image_description" ); ?></p>
 							</div>
 							<div class="col-md-6 padding-products-x padding-column-xr">
@@ -65,6 +72,7 @@ get_header();
 						<?php else : ?>
 							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 		</main><!-- #main -->

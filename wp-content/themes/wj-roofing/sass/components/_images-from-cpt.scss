@@ -16,7 +16,9 @@
 
 .service-image {
     width: 100%;
-    height: auto;
+    height: 35rem;
+    background-size: cover;
+    background-position: center center;
     &-spacer {
         &-t {
             height: 16%;
@@ -24,6 +26,17 @@
         &-m {
             height: 78.25%;
         }
+    }
+}
 
+.gallery-spacer {
+    &-l {
+        margin-right: 2rem;
+    }
+    &-r {
+        margin-left: 2rem;
+    }
+    &-top {
+        margin-top: 4rem;
     }
 }

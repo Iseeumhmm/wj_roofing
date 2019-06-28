@@ -67,15 +67,3 @@ body {
 button:focus {outline:0;}
 li:focus {outline:0;}
 
-@media( max-width: 1750px ) {
-    body {
-        font-size: 18px;
-        p { font-size: 18px; }
-    }
-}
-@media( max-width: 1400px ) {
-    body {
-        font-size: 16px;
-        p { font-size: 16px; }
-    }
-}

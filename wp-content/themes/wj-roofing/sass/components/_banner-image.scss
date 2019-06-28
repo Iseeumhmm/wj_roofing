@@ -4,16 +4,28 @@
     background-size: cover;
     background-position: top right;
     &-main {
-        height: 38rem;
+        height: 40rem;
         background-position: center left;
 
+    }
+    &-products {
+        height: 50rem;
+        background-position: center center;
     }
     &-about {
         height: 48rem;
         background-position: center center;
+    }
+    &-gallery {
+        height: 48rem;
+        background-position: bottom center;
+    }
+    &-contact {
+        height: 70rem;
     }
 }
 .banner-text {
     color: white;
     font-size: $font-medium;
 }
+

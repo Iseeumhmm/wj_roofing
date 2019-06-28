@@ -1,0 +1,24 @@
+.gallery {
+    &-page {
+        .featured, .wj-team, .gallery-image {
+            background-size: cover;
+            background-position: center center;
+            height: 60rem;
+            position: relative;
+        }
+        // Remove bootsrap padding from columns and re-add it to the row
+        .row {
+            padding: 0 15px !important;
+        }
+        [class^="col-"] {
+            padding: 0 !important;
+        }
+    }
+    &-caption {
+        color: white;
+        position: absolute;
+        bottom: 2rem;
+        left: 2.75rem;
+        font-size: 18px;
+    }
+}

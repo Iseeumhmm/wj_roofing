@@ -31,11 +31,13 @@ License URI:        http://opensource.org/licenses/MIT
 @import "./components/banner-image";
 @import "./components/button";
 @import "./components/footer";
-@import "./components/post-image";
-
+@import "./components/images-from-cpt";
+@import "./components/contact-form";
 
 // Pages
 
 @import "./pages/home";
 @import "./pages/about";
+@import "./pages/gallery";
+
 
