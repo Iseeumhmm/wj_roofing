@@ -20,6 +20,7 @@
 }
 
 .contact-form {
+
     &-input {
         color: $grey;
         border: 1px solid $grey;
@@ -33,5 +34,49 @@
         height: 12rem;
         margin-top: 15px;
         padding: 1.5rem 0 0 2rem;
+        border: 1px solid $grey;
+    }
+    
+}
+@media ( max-width: 1200px ) {
+   
+    .contact-form {
+        &-input {
+            font-size: $font-small-1500;
+            height: 4rem;
+        }
+        &-quote {
+            font-size: $font-small-1500;
+            height: 8rem;
+        }
+    }
+    @media ( max-width: 767px ) {
+        #contact-form {
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                div[class^="col-"]:first-child {
+                    padding-right: 0 !important;
+                }
+                div[class^="col-"]:nth-child(2) {
+                    padding-left: 0 !important;
+                    padding-top: 5px;
+                }
+                div[class^="col-"] {
+                    padding-right: 0 !important;
+                }
+                div[class^="col-"] {
+                    padding-left: 0 !important;
+                }
+            }
+            .row:not(:first-child) {
+                margin-top: 5px;
+            }
+        }
+        .contact-form {
+            &-quote {
+                margin-top: 5px;
+            }
+        }
     }
 }

@@ -13,7 +13,10 @@
         padding-top: 1rem;
     }
 }
-
+.products-image {
+    width: 100%;
+    object-fit: contain;
+}
 .service-image {
     width: 100%;
     height: 35rem;

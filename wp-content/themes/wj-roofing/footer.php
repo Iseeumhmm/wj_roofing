@@ -17,20 +17,28 @@
 		<div class="red-line"></div>
 		<div class="container-fluid main-container footer-height">
 			<div class="row footer-height d-flex justify-content-between align-items-center">
-				<div class="col-auto">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/logos/shingle-master.png">
+				<div class="col-12 col-lg-auto">
+					<img class="footer-image"src="<?php echo get_template_directory_uri(); ?>/images/logos/shingle-master.png">
 				</div>
-				<div class="col-auto">
-					<p>
-						<a href="<?php echo get_site_url() ?>/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-						<a href="<?php echo get_site_url() ?>/about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-						<a href="<?php echo get_site_url() ?>/products">Products</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+				<div class="col-12 col-lg-auto">
+					<!-- <p>
+						<a href="<?php echo get_site_url() ?>/">Home</a>
+						<a href="<?php echo get_site_url() ?>/about">About</a>
+						<a href="<?php echo get_site_url() ?>/products">Products</a>
+						<a href="<?php echo get_site_url() ?>/gallery">Gallery</a>
+						<br><br>
+						<a href="<?php echo get_site_url() ?>/privacy-policy">Privacy Policy</a>
+					</p> -->
+					<p class="footer-menu">
+						<a href="<?php echo get_site_url() ?>/">Home</a>
+						<a href="<?php echo get_site_url() ?>/about">About</a>
+						<a href="<?php echo get_site_url() ?>/products">Products</a>
 						<a href="<?php echo get_site_url() ?>/gallery">Gallery</a>
 						<br><br>
 						<a href="<?php echo get_site_url() ?>/privacy-policy">Privacy Policy</a>
 					</p>
 				</div>
-				<div class="col-auto">
+				<div class="col-12 col-lg-auto">
 					<ul>
 						<li class="font-weight-bold">W.J. Roofing Ltd.</li>
 						<li>9177 Plank Rd</li>

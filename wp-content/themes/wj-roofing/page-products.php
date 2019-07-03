@@ -21,8 +21,8 @@ get_header();
 		}
 	</style>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<div class="banner-image banner-image-center banner-image-1"></div>
+		<main id="main" class="site-main products-page">
+			<div class="banner-image banner-image-main banner-image-1"></div>
 			<div class="main-container padding-main-t">
 				<h2 class="text-black">We offer a variety of products including</h2>
 				<p class="text-regular">EPDM & TPO Flat Roofing, Long Sheet Metal Roofing, and the following:</p>
@@ -34,8 +34,8 @@ get_header();
 					<div class="row justify-content-center">
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-							<div class="col-md-3 text-center padding-products-x">
-								<img src="<?php the_field( "product_image" ); ?>">
+							<div class="col-sm-6 col-md-3 text-center padding-products-x">
+								<img class="products-image" src="<?php the_field( "product_image" ); ?>">
 								<p class="text-regular"><?php the_title(); ?></p>
 							</div>
 						<?php endwhile; ?>
@@ -54,13 +54,13 @@ get_header();
 					<div class="row">
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-							<div class="col-md-6 padding-products-x padding-column-xl">
+							<div class="col-12 col-md-6 padding-products-x padding-column-xl">
 								<h2 class="padding-small-b padding-medium-t"><?php the_title(); ?></h2>
 								<div class="service-image" style="background-image: url( '<?php the_field( "image" ); ?>' )"></div>
 								<!-- <img class="service-image" src="<?php the_field( "image" ); ?>"></img> -->
 								<p class="text-regular text-image padding-small-t"><?php the_field( "image_description" ); ?></p>
 							</div>
-							<div class="col-md-6 padding-products-x padding-column-xr">
+							<div class="col-12 col-md-6 padding-products-x padding-column-xr">
 								<div class="service-image-spacer-t"></div>
 								<div class="position-relative service-image-spacer-m">
 									<p class="text-regular center-hor"><?php the_field( "service_description" ); ?></p>

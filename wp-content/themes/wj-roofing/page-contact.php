@@ -21,7 +21,7 @@ get_header();
 		}
 	</style>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main contact-page">
 			<div class="banner-image banner-image-main banner-image-1"></div>
 			<div class="container-fluid main-container padding-main-y">
 				<div class="row">
@@ -46,7 +46,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div class="banner-image banner-image-contact banner-image-about">
+			<div class="banner-image banner-image-contact">
 				<iframe width="100%" height="700px" src="https://maps.google.com/maps?hl=en&amp;q=9177%20Plank%20Rd%20Straffordville%2C%20ON%20N0J%201Y0+(Title)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
 		</main><!-- #main -->

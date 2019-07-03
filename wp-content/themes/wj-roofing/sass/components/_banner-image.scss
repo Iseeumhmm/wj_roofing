@@ -5,8 +5,11 @@
     background-position: top right;
     &-main {
         height: 40rem;
+        background-position: center center;
+    }
+    &-main--left {
+        height: 40rem;
         background-position: center left;
-
     }
     &-products {
         height: 50rem;
@@ -23,9 +26,54 @@
     &-contact {
         height: 70rem;
     }
+    
 }
 .banner-text {
     color: white;
     font-size: $font-medium;
 }
-
+@media ( max-width: 1200px ){
+    .banner-image {
+        &-contact {
+            height: 45rem;
+            iframe {
+                height: 45rem;
+            }
+        }
+    }
+}
+@media ( max-width: 767px ){
+    .banner-image {
+        height: 25rem;
+        &-main {
+            height: 25rem;
+            background-position: center center;
+        }
+        &-main--left {
+            height: 25rem;
+            background-position: center left;
+        }
+        &-products {
+            height: 25rem;
+            background-position: center center;
+        }
+        &-about {
+            height: 25rem;
+            background-position: center center;
+        }
+        &-gallery {
+            height: 25rem;
+            background-position: bottom center;
+        }
+        &-contact {
+            height: 25rem;
+            iframe {
+                height: 25rem;
+            }
+        }
+    }
+    .banner-text {
+        h3 { font-size: $font-large-1200; }
+        font-size: $font-medium-1200;
+    }
+}

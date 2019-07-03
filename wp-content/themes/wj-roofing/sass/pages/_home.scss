@@ -24,8 +24,11 @@
     }
 
     @media ( max-width: 575px) {
+        .padding-small-t {
+            padding-top: 3rem;
+        }
         .col-sm-5 {
-            padding-bottom: $padding-main-y;
+            padding-bottom: 4rem;
             display: flex;
             justify-content: center;
             align-items: center;

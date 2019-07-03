@@ -1,10 +1,43 @@
 .gallery {
     &-page {
+        
         .featured, .wj-team, .gallery-image {
             background-size: cover;
             background-position: center center;
             height: 60rem;
             position: relative;
+        }
+        @media ( max-width: 1200px ) {
+            .gallery-spacer-l {
+                margin-right: .75rem;
+            }
+            .gallery-spacer-r {
+                margin-left: .75rem;
+            }
+            .gallery-spacer-top {
+                margin-top: 1.5rem;
+            }
+        }
+        @media ( max-width: 767px ) {
+            .padding-medium-b {
+                padding-bottom: 2rem;
+            }
+            .gallery-spacer-l {
+                margin-right: 0;
+            }
+            .gallery-spacer-r {
+                margin-left: 0;
+            }
+            .gallery-spacer-top {
+                margin-top: 2rem;
+            }
+            .wj-team {
+                margin-top: 2rem;
+            }
+            .row.justify-content-center {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
         }
         // Remove bootsrap padding from columns and re-add it to the row
         .row {
@@ -21,4 +54,5 @@
         left: 2.75rem;
         font-size: 18px;
     }
+    
 }

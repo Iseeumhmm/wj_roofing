@@ -34,7 +34,7 @@ get_header();
 
 	<div id="primary" class="content-area home-page">
 		<main id="main" class="site-main">
-		<div class="banner-image banner-image-main banner-image-1"></div>
+		<div class="banner-image banner-image-main-left banner-image-1"></div>
 		<div class="container-fluid main-container padding-main-y">
 			<div class="row column-reverse">
 				<div class="col-sm-5 col-md-4">
@@ -94,7 +94,7 @@ get_header();
 		</div>
 		<div class="banner-image banner-image-2">
 			<div class="main-container padding-main-t">
-				<h3>Questions?</h3>
+				<h3 class="banner-text">Questions?</h3>
 				<p class="banner-text text-bold-italic">
 					Stop by our showroom or give<br>
 					us a call at <a href="tel: 519-866-5688">519-866-5688</a>

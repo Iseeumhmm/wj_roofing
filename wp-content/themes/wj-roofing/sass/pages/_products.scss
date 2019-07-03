@@ -1,0 +1,15 @@
+.products-page {
+    @media ( max-width: 1200px ) { 
+        .padding-column-xl {
+            padding-right: 2rem !important;
+        }
+        .padding-column-xr {
+            padding-left: 2rem !important;
+        }
+    }
+    @media ( max-width: 767px ) { 
+        .center-hor {
+            position: relative;
+        }
+    }
+}

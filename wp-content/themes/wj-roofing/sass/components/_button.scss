@@ -10,4 +10,12 @@
     &:hover {
         background-color: $black;
     }
+    
+}
+@media ( max-width: 767px ) {
+    .button { 
+        font-size: $font-small-1200;
+        padding: .75rem 1.5rem;
+
+    }
 }

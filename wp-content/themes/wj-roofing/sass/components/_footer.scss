@@ -5,12 +5,77 @@ footer {
         height: 1rem;
         background-color: $red;
     }
+    .footer {
+        &-menu {
+            a:not(:last-child)::after {
+                padding-left: 2rem;
+                display: inline-block;
+                content: '|';
+            }
+            a:nth-child(4)::after {
+                display: none;
+            }
+            a:not(:first-child) {
+                padding-left: 1rem;
+            }
+            a:last-child {
+                padding: 0;
+            }
+        }
+        &-height {
+            height: 30rem;
+        }
+    }
     color: white;
-    height: $footer-height;
     ul li {
         list-style: none;
     }
     a {
         display: inline-block;
+    }
+    @media ( max-width: 1500px ) {
+        li, a {
+            font-size: $font-small-1500;
+        }
+        .footer {
+            &-height {
+                height: 25rem;
+            }
+            &-image {
+                height: 15rem;
+            }
+        }
+    }
+    @media ( max-width: 991px ) {
+        .footer {
+            &-menu {
+                text-align: center;
+            }
+            &-height {
+                height: auto;
+            }
+        }
+        .col-lg-auto {
+            padding-top: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        padding-bottom: 4rem;
+    }
+    @media ( max-width: 427px ) {
+        .footer-menu {
+            a { font-size: $font-small-1200; }
+            a:not(:last-child)::after {
+                padding-left: .5rem;
+            }
+            a:not(:first-child) {
+                padding: 0;
+                margin-left: -.25rem;
+            }
+            a:last-child {
+                padding: 0;
+            }
+        }
     }
 }

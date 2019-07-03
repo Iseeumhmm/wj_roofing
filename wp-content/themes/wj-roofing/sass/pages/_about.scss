@@ -2,4 +2,14 @@
     li {
         list-style: none;
     }
+    @media ( max-width: 767px ) {
+        .padding-column-xr {
+            padding: 0 15px !important;
+        }
+        .medium-image {
+            background-position: top center;
+            margin-top: 4rem;
+            height: 50rem;
+        }
+    }
 }
