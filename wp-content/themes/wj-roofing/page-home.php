@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-	// Get images
+	<!-- Get Images -->
 	<style>
 		.banner-image-1 {
 			background-image: url('<?php echo get_template_directory_uri(); ?>/images/banners/banner-home-1.jpg')
