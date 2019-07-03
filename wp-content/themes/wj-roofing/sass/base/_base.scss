@@ -31,7 +31,7 @@ body {
     }
     h1, h2 {
         color: $red;
-        font-family: "Arial Black";
+        font-family: "Arial Black", "Arial Bold", sans-serif;
     }
     h1 { font-size: $font-large; }
     h2 { 
@@ -39,7 +39,7 @@ body {
         font-weight: bold;
     }
     h3 {
-        font-family: "Arial Black";
+        font-family: "Arial Black", "Arial Bold", sans-serif;
         color: white;
         font-size: $font-large;
     }

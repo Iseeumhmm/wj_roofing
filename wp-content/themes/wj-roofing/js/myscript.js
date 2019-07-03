@@ -10,7 +10,7 @@ switch (page) {
         $( "#about" ).addClass( "active" );
         break;
     case "privacy-policy":
-        $( "#about" ).addClass( "active" );
+        $( "#about" ).removeClass( "active" );
         break;
     case "products":
         $( "#products" ).addClass( "active" );

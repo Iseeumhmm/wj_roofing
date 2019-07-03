@@ -71,9 +71,12 @@ nav.navbar {
     }
 }
 .navbar-menu-text {
+    font-family: 'Arial Bold', sans-serif;
+    border-radius: 0;
     color: $white;
 }
 button.navbar-toggler {
+    border-radius: 0;
    border-color: $white !important;
    margin-left: 15px;
 }

@@ -11224,7 +11224,7 @@ body a:hover {
 body h1,
 body h2 {
   color: #ed1c24;
-  font-family: "Arial Black";
+  font-family: "Arial Black", "Arial Bold", sans-serif;
 }
 
 body h1 {
@@ -11237,7 +11237,7 @@ body h2 {
 }
 
 body h3 {
-  font-family: "Arial Black";
+  font-family: "Arial Black", "Arial Bold", sans-serif;
   color: white;
   font-size: 48px;
 }
@@ -11505,10 +11505,13 @@ nav.navbar li:first-child .active::before {
 }
 
 .navbar-menu-text {
+  font-family: "Arial Bold", sans-serif;
+  border-radius: 0;
   color: #fff;
 }
 
 button.navbar-toggler {
+  border-radius: 0;
   border-color: #fff !important;
   margin-left: 15px;
 }
@@ -11614,6 +11617,7 @@ button.navbar-toggler {
 .button {
   outline: none;
   border: none;
+  border-radius: 0;
   border-style: none !important;
   background-color: #ed1c24;
   color: #fff;
