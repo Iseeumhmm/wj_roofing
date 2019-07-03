@@ -55,6 +55,26 @@ body {
         margin: 0 auto;
         width: 127.5rem;
     }
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    // Media Queries
+    @media ( max-width: 1500px ) {
+        .main-container {
+            width: auto;
+            margin: 0 10rem;
+        }
+    }
+    @media ( max-width: 1200px ) {
+        h2 {
+            font-size: $font-medium-1500;
+        }
+        .main-container {
+            margin: 0 15px;
+        }
+    }
 }
 // Bootstrap Adjustments
 

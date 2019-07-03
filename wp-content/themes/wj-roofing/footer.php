@@ -15,8 +15,8 @@
 
 	<footer id="colophon" class="site-footer background-black">
 		<div class="red-line"></div>
-		<div class="container-fluid main-container h-100">
-			<div class="row h-100 d-flex justify-content-between align-items-center">
+		<div class="container-fluid main-container footer-height">
+			<div class="row footer-height d-flex justify-content-between align-items-center">
 				<div class="col-auto">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logos/shingle-master.png">
 				</div>
@@ -27,7 +27,7 @@
 						<a href="<?php echo get_site_url() ?>/products">Products</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
 						<a href="<?php echo get_site_url() ?>/gallery">Gallery</a>
 						<br><br>
-						<a href="">Privacy Policy</a>
+						<a href="<?php echo get_site_url() ?>/privacy-policy">Privacy Policy</a>
 					</p>
 				</div>
 				<div class="col-auto">

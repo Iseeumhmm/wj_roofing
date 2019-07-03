@@ -1,11 +1,12 @@
 footer {
     .red-line {
+        position: absolute;
         width:100%;
         height: 1rem;
         background-color: $red;
     }
     color: white;
-    height: 50rem;
+    height: $footer-height;
     ul li {
         list-style: none;
     }

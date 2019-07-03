@@ -3,6 +3,7 @@
 header {
     .site-branding {
         padding: 4rem 0;
+        padding: 15px;
     }
     .row {
         position: relative;
@@ -25,4 +26,49 @@ header {
         font-style: italic;
         font-size: $font-small;
     }
+
+    // Media Queries
+
+    @media ( max-width: 1500px ) {
+        h1 {
+            font-size: $font-large-1500;
+        }
+        .main-logo {
+            width: 35rem;
+        }
+    }
+
+    @media ( max-width: 1200px ) {
+        h1 {
+            font-size: $font-large-1200;
+        }
+    }
+    @media ( max-width: 992px ) {
+        .main-logo {
+            width: 30rem;
+            padding-left: 3rem;
+        }
+    }
+    @media ( max-width: 698px ) {
+        h1 { display: none; }
+        .center-phone {
+            a { position: relative; }
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+    @media ( max-width: 575px ) {
+        .main-logo {
+            padding: 0;
+        }
+        .center-logo {
+            display: flex;
+            justify-content: center;
+        }
+        .center-phone {
+            justify-content: center;
+        }
+    }
 }
+

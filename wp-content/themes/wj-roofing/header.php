@@ -20,23 +20,28 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body >
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
+	 <header id="masthead" class="site-header">
 		<div class="site-branding">
 			<div class="container-fluid main-container">
 				<div class="row">
-					<div class="col">
+					<div class="col-12 col-sm center-logo">
 						<a href="<?php echo get_site_url(); ?>/" title="Home"><img class="main-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/wj-roofing-logo.svg" alt="Logo"></a>
 					</div>
-					<div class="col">
+					<div class="col-12 col-sm center-phone">
 						<a href="tel: 519-866-5688" class="telephone">519-866-5688</a>
 						<h1 class="heading">Where Quality Matters</h1>
 					</div>
 				</div>
 			</div>
-		</div><!-- .site-branding -->
+		</div> 
+		<!-- .site-branding -->
 		<nav class="navbar navbar-expand-lg navbar-light background-red">
+			<button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<span class="navbar-menu-text">Menu</span>
+			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
 				<div class="navbar-nav mr-auto navbar-mobile-center main-container">
 					<ul class="navbar-nav">
@@ -59,6 +64,6 @@
 				</div>
 			</div>
 		</nav>
-	</header><!-- #masthead -->
+	</header> 
 
 	<div id="content" class="site-content">

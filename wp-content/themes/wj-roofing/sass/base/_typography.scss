@@ -24,3 +24,9 @@
 .text-black {
     color: $black;
 }
+
+@media ( max-width: 992px ) {
+    .text-regular {
+        font-size: $font-small-1500;
+    }
+}

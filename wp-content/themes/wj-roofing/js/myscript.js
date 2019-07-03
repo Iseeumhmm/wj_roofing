@@ -9,6 +9,9 @@ switch (page) {
     case "about":
         $( "#about" ).addClass( "active" );
         break;
+    case "privacy-policy":
+        $( "#about" ).addClass( "active" );
+        break;
     case "products":
         $( "#products" ).addClass( "active" );
         break;

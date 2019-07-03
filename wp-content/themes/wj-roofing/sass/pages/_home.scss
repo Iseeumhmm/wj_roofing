@@ -22,4 +22,20 @@
             display: block;
         }
     }
+
+    @media ( max-width: 575px) {
+        .col-sm-5 {
+            padding-bottom: $padding-main-y;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+        .col-md-8.ml-auto {
+            text-align: center;
+        }
+    }
 }

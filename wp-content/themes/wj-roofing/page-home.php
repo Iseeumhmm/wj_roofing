@@ -36,9 +36,9 @@ get_header();
 		<main id="main" class="site-main">
 		<div class="banner-image banner-image-main banner-image-1"></div>
 		<div class="container-fluid main-container padding-main-y">
-			<div class="row">
-				<div class="col-md-4">
-				<h2>How Can<br> We Help?</h2><br>
+			<div class="row column-reverse">
+				<div class="col-sm-5 col-md-4">
+				<h2>How Can We Help?</h2><br>
 				<ul class="text-regular">
 					<li>Fibreglass Shingles</li>
 					<li>Designer Shingles</li>
@@ -49,7 +49,7 @@ get_header();
 					<li>Roof Service & Repair</li>
 				</ul>
 				</div>
-				<div class="col-md-8">
+				<div class="col-sm-7 col-md-8">
 					<h2 class="text-black">Success Starts With Quality . . .
 					Guaranteed.</h2><br>
 					<p class="text-regular text-bold-italic">
@@ -62,25 +62,29 @@ get_header();
 						and warehouse located in Straffordville, Ontario.
 						Request a Quote
 					</p><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-7 col-md-8 ml-auto">
 					<a href="<?php echo get_site_url() ?>/contact"><button class="button">Request a Quote</button></a>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid main-container padding-main-b">
 			<div class="row">
-				<div class="col hover-bar">
+				<div class="col-12 col-sm hover-bar">
 					<div class="small-image small-image-1">
 						<div class="red-bar"></div>
 					</div>
 					<a href="<?php echo get_site_url() ?>/about"><h2 class="padding-small-t">About Us</h2></a>
 				</div>
-				<div class="col hover-bar">
+				<div class="col-12 col-sm hover-bar">
 					<div class="small-image small-image-2">
 						<div class="red-bar"></div>
 					</div>
 					<a href="<?php echo get_site_url() ?>/products"><h2 class="padding-small-t">Our Products</h2></a>
 				</div>
-				<div class="col hover-bar">
+				<div class="col-12 col-sm hover-bar">
 					<div class="small-image small-image-3">
 						<div class="red-bar"></div>
 					</div>

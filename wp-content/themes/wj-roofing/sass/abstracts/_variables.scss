@@ -12,10 +12,26 @@ $grey: #808080;
     background-color: $black;
 }
 
+// Font Sizes
+
 $font-large: 48px;
 $font-medium: 36px;
 $font-small: 24px;
+    // 1500px sizes
+    $font-large-1500: 36px;
+    $font-medium-1500: 24px;
+    $font-small-1500: 18px;
+        // 1200px sizes
+        $font-large-1200: 24px;
+        $font-medium-1200: 18px;
+        $font-small-1200: 18px;
 
+
+// footer height
+$footer-height: 30rem;
+.footer-height {
+    height: 30rem;
+}
 
 // Margins
 

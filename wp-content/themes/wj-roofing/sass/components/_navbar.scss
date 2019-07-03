@@ -3,6 +3,7 @@ nav.navbar {
     font-size: $font-medium;
     font-style: italic;
     color: white;
+    
     .bullet {
         color: $black;
     }
@@ -26,14 +27,39 @@ nav.navbar {
             left: -.5rem;
         }
     }
-    
-
-// button.navbar-toggler {
-//     height: 2.5rem;
-//     z-index: 1000;
-//     position: absolute;
-//     right: 1.5rem;
-//     top: 1.65rem;
-// }
+    @media ( max-width: 1500px ) {
+        li { font-size: $font-medium-1500; }
+        li:not(:first-child) { 
+            margin-left: 5rem; 
+            .active::before {
+                left: -2rem;
+            }
+        }
+        li:first-child {
+            padding-left: 4rem;
+            .active::before {
+                left: 2rem;
+            }
+        }
+    }
+    @media ( max-width: 1200px ) {
+        li { font-size: $font-medium-1200; }
+        li:not(:first-child) { 
+            .active::before {
+                left: -1rem;
+            }
+        }
+        li:first-child {
+            .active::before {
+                left: 3rem;
+            }
+        }
+    }
 }
-
+.navbar-menu-text {
+    color: $white;
+}
+button.navbar-toggler {
+   border-color: $white !important;
+   margin-left: 15px;
+}
