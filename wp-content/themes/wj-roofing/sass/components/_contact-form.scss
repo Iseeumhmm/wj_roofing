@@ -23,13 +23,18 @@
 
     &-input {
         color: $grey;
+        border-top-style: none;
         border: 1px solid $grey;
+        border-radius: 0;
         width: 100%;
         height: 6rem;
         padding-left: 2rem;
     }
     &-quote {
         color: $grey;
+        border-top-style: none;
+        border: 1px solid $grey;
+        border-radius: 0;
         width: 100%;
         height: 12rem;
         margin-top: 15px;
@@ -42,10 +47,14 @@
    
     .contact-form {
         &-input {
+            border-radius: 0;
+            border-style: solid;
             font-size: $font-small-1500;
             height: 4rem;
         }
         &-quote {
+            border-radius: 0;
+            border-style: solid;
             font-size: $font-small-1500;
             height: 8rem;
         }
