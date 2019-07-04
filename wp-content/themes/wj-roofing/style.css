@@ -11510,6 +11510,7 @@ nav.navbar li:first-child .active::before {
 
 .navbar-menu-text {
   font-family: "Arial Bold", sans-serif;
+  font-size: 18px;
   border-radius: 0;
   color: #fff;
 }
@@ -11625,7 +11626,7 @@ button.navbar-toggler {
   border-style: none !important;
   background-color: #ed1c24;
   color: #fff;
-  font-family: "Arial Black";
+  font-family: "Arial Black", "Arial Bold", sans-serif;
   font-size: 24px;
   padding: 1rem 2rem;
 }
