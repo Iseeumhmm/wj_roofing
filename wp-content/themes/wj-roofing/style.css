@@ -11819,7 +11819,7 @@ footer a {
   color: #808080;
   border-top-style: none;
   border: 1px solid #808080;
-  border-radius: 0 !important;
+  border-radius: 0px !important;
   -webkit-appearance: none !important;
   width: 100%;
   height: 6rem;
@@ -11830,7 +11830,7 @@ footer a {
   color: #808080;
   border-top-style: none;
   border: 1px solid #808080;
-  border-radius: 0 !important;
+  border-radius: 0px !important;
   -webkit-appearance: none !important;
   width: 100%;
   height: 12rem;
