@@ -83,6 +83,34 @@ if ( ! function_exists( 'wj_roofing_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'wj_roofing_setup' );
 
+
+//Add Open Graph Meta Info 
+
+function meta_data() {
+
+    echo '<!--og tag-->';
+    echo '<meta property="og:type" content="business.business">';
+    echo '<meta property="og:title" content="W.J. Roofing Ltd.">';
+    echo '<meta property="og:url" content="https://www.wjroofing.com/">';
+    echo '<meta property="og:image" content="https://www.wjroofing.com/wp-content/uploads/2019/06/contact.jpg">';
+    echo '<meta property="business:contact_data:street_address" content="9177 Plank Road">';
+    echo '<meta property="business:contact_data:locality" content="Straffordville">';
+    echo '<meta property="business:contact_data:region" content="Ontario">';
+    echo '<meta property="business:contact_data:postal_code" content="N0J 1Y0">';
+    echo '<meta property="business:contact_data:country_name" content="Canada">';
+
+    echo '<!-- Global site tag (gtag.js) - Google Analytics -->';
+    echo '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48328590-4"></script>';
+    echo '<script>';
+    echo 'window.dataLayer = window.dataLayer || [];';
+    echo 'function gtag(){dataLayer.push(arguments);}';
+    echo "gtag('js', new Date());";
+    echo "gtag('config', 'UA-48328590-4');";
+    echo '</script>';
+    echo " ";
+}
+add_action( 'wp_head', 'meta_data', 5 );
+
 /**
  * CUSTOM PRODUCTS POST TYPE
  */
@@ -264,7 +292,6 @@ function wj_roofing_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wj_roofing_scripts' );
-
 
 
 /**
